@@ -36,7 +36,3 @@ while True:
         # If DHT is not detected, break and stop this script.
         dhtDevice.exit()
         raise e
-
-        
-
-
