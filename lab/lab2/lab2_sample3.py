@@ -29,4 +29,3 @@ acc.data_rate = const(0b1111)
 ratedict = {15:3200,14:1600,13:800,12:400,11:200,10:100,9:50,8:25,7:12.5,6:6.25,5:3.13,4:1.56,3:0.78,2:0.39,1:0.2,0:0.1}
 
 print("Output data rate is {} Hz.".format(ratedict[acc.data_rate]))
-s
