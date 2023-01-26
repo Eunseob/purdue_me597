@@ -22,7 +22,7 @@ acc = adafruit_adxl34x.ADXL345(i2c)
 # acc.data_rate, 0b means binary. 1010 = 10 = 100 Hz Output data rate
 # so, if you want to change the output data rate as 3200 Hz, set it to 1111
 # to change back to default (0.1 Hz), set it to 0000
-acc.data_rate = const(0b1111)
+acc.data_rate = const(0b1010)
 
 # ratedict=output rate dictionary
 # See Table5 of Lab3 manual key=rate code (decimal), value=output data rate (Hz)
