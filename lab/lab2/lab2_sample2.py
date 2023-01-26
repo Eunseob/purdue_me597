@@ -3,7 +3,7 @@
 
 """
 ME597-IIoT Implmt. for Smrt Mfg.
-Lab3 - sample code 2 : Save accelerations in a CSV file
+Lab2 - sample code 2 : Save accelerations in a CSV file
 """
 
 import time

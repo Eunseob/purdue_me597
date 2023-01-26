@@ -3,7 +3,7 @@
 
 """
 ME597-IIoT Implmt. for Smrt Mfg.
-Lab3 - sample code 4: increase data rate and data collection and saving
+Lab2 - sample code 4: increase data rate and data collection and saving
 """
 
 import time

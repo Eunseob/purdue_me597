@@ -3,7 +3,7 @@
 
 """
 ME597-IIoT Implmt. for Smrt Mfg.
-Lab3 - sample code 1
+Lab2 - sample code 1
 """
 
 import time

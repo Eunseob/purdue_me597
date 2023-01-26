@@ -3,7 +3,7 @@
 
 """
 ME597-IIoT Implmt. for Smrt Mfg.
-Lab3 - sample code 5: Reading CSV file, signal processing, plotting
+Lab2 - sample code 5: Reading CSV file, signal processing, plotting
 """
 
 import matplotlib
