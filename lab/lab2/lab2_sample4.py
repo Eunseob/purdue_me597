@@ -41,7 +41,7 @@ data_y = [] # y-axis acceleration
 data_z = [] # z-axis acceleration
 
 # filename and header
-filename = datetime.datetime.now().strftime("%Y%m%d_%H%M%S") + "_lab3_part5.csv"
+filename = datetime.datetime.now().strftime("%Y%m%d_%H%M%S") + "_lab2_fan_off.csv"
 header = ["T [sec]", "t [sec]", "a_x [m/s2]", "a_y [m/s2]", "a_z [m/s2]"]
 
 t_0 = time.time() # to calculate t

@@ -20,7 +20,7 @@ i2c = busio.I2C(board.SCL, board.SDA)
 acc = adafruit_adxl34x.ADXL345(i2c)
 
 # filename and header
-filename = datetime.datetime.now().strftime("%Y%m%d_%H%M%S") + "_lab3_part4.csv"
+filename = datetime.datetime.now().strftime("%Y%m%d_%H%M%S") + "_lab2_fan_off.csv"
 header = ["Timestamp", "a_x [m/s2]", "a_y [m/s2]", "a_z [m/s2]"]
 
 start = time.time()# start time, unit = second
