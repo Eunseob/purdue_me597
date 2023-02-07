@@ -1,6 +1,4 @@
 # MTConnet adapter sample for ME597 Lab6
-# Copyright 
-# Example for Sample and Event
 
 import sys
 import time
