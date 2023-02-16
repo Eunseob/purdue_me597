@@ -5,12 +5,14 @@ import random
 from scipy.fft import fft, fftfreq
 
 # You should change filename.
-filename = "YOURFILENAME" # input your file name
+# If the data is in the different location of this Python script,
+# you have to specify the directory information as well.
+filename = "20230216_112751_Test_lab8_data.csv" # input your filename
 data = [] # initialize data
 N = 1000 # number of sample
 T = 1/N # sampling period
 R = random.randint(0, 10) # randomly pick a integer number between 0 and 10
-t = np.linspace(0, 1, 1000) # create time array for plotting
+t = np.linspace(0, 1, N) # create time array for plotting
 
 # Reading a CSV file and convert rows as data
 with open(filename, 'r') as f:
@@ -21,6 +23,7 @@ with open(filename, 'r') as f:
 
 data = np.array(data) #converting data as numpy array
 
+
 def decompose(data): # decompose data from string (with space delimited) to a float array
     return np.fromstring(data, dtype=float, sep=" ")
 
@@ -30,6 +33,7 @@ a_y = decompose(data[R][2]) # Y-axis acceleration array
 a_z = decompose(data[R][3]) # Z-axis acceleration array
 
 condition = data[R][0] # get the condition string
+
 your_name = "name" # input your name
 Time_title = "Time domain, "+condition+", "+your_name
 Freq_title = "Freq domain, "+condition+", "+your_name
