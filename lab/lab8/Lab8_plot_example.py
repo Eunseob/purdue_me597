@@ -48,6 +48,7 @@ ax1[2].set_xlabel('Time [sec]')
 def get_fft(x, T, N): # fft converting
     f = fftfreq(N, T)[:N//2]
     y_mag = 2/N * np.abs(fft(x)[:N//2])
+    y_mag[0] = 0
     return f, y_mag
 
 f_x, y_x = get_fft(a_x, T, N)
