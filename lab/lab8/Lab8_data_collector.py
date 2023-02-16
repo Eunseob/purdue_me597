@@ -13,7 +13,7 @@ acc = adafruit_adxl34x.ADXL345(i2c) # acc object is instantiation using i2c of A
 acc.data_rate = const(0b1111) # change sampling rate as 3200 Hz
 
 # ratedict=output rate dictionary
-# See Table5 of Lab3 manual key=rate code (decimal), value=output data rate (Hz)
+# See Table5 of Lab2 manual key=rate code (decimal), value=output data rate (Hz)
 ratedict = {15:3200,14:1600,13:800,12:400,11:200,10:100,9:50,8:25,7:12.5,6:6.25,5:3.13,4:1.56,3:0.78,2:0.39,1:0.2,0:0.1}
 
 print("Output data rate is {} Hz".format(ratedict[acc.data_rate])) # printing out data rate
