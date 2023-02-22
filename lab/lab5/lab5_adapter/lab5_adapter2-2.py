@@ -19,10 +19,10 @@ class MTConnectAdapter(object): # MTConnect adapter object
         self.adapter = Adapter((host, port))
 
         # For samples
-        self.a1 = Sample('a2') # self.a1 takes 'a2' sample data item id.
-        self.adapter.add_data_item(self.a2) # adding self.a2 in adapter
-        self.a1 = Sample('a3') # self.a1 takes 'a1' sample data item id.
-        self.adapter.add_data_item(self.a3) # adding self.a3 in adapter
+        self.a1 = Sample('a1') # self.a1 takes 'a2' sample data item id.
+        self.adapter.add_data_item(self.a1) # adding self.a2 in adapter
+        self.a2 = Sample('a2') # self.a1 takes 'a1' sample data item id.
+        self.adapter.add_data_item(self.a2) # adding self.a3 in adapter
 
         # For events
         ## Add more events below, if needed.
