@@ -63,7 +63,7 @@ def predict(model, data, threshold):
 ## ============== MAIN ==============
 
 if __name__ == "__main__":
-    model_path = "model/YourModelDirectory/" # model file directory, you must change this!
+    model_path = "models/YourModelDirectory/" # model file directory, you must change this!
     model = tf.keras.models.load_model(model_path) # load the model from the path above
     threshold = # threshold (MAE loss) for the ML model
     min_val = # minimum value for normalization
