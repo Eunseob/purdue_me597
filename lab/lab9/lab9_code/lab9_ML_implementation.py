@@ -45,6 +45,7 @@ def timeFeatures(data): # time domain signal processing
 def freqFeatures(data): # freq domain signal processing
     N = len(data) # length of the data (must be 1000)
     yf = 2/N*np.abs(fft.fft(data)[:N//2]) # yf is DFT signal magnitude
+    yf[0] = 0
     feature = np.array(yf, dtype=float) # feature array  
     return feature # numpy array, each element data type = float
 
