@@ -26,6 +26,7 @@ def freqFeatures(data):
     for i in range(len(data)):
         N = len(data[i]) # number of data
         yf = 2/N*np.abs(fft.fft(data[i])[:N//2]) # yf is DFT signal magnitude
+        yf[0] = 0
         feature.append(np.array(yf))
     feature = np.array(feature)
     return feature
@@ -54,11 +55,11 @@ df = pd.concat(frames) # new concatenated dataframe
 # X-axis: 'Xacc array [m/s2]'
 # Y-axis: 'Yacc array [m/s2]'
 # Z-axis: 'Zacc array [m/s2]'
-DIMENSION = # Select one (for your model) of above axes
+AXIS = # Select one (for your model) of above axes
 
 # Exploding the values contained in selected column and converting the string values into float values
-df = pd.concat([df['Condition'],df[DIMENSION].str.split(' ', expand=True).astype(float)], axis=1) # transform space delimited array to each value
-ds = df.copy() # make ds by copying df
+df_new = pd.concat([df['Condition'],df[AXIS].str.split(' ', expand=True).astype(float)], axis=1) # transform space delimited array to each value
+ds = df_new.copy() # make ds by copying df
 
 #Converting the Classifier into binary values
 ds.loc[df['Condition'] == 'Normal', 'Status'] = 1 # if Condition column is 'Normal', Give 'Status' Column 1
